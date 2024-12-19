@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>241219_PoolCProject0</title>
+  <title>241219_PoolCProject3</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
   <link rel="stylesheet" href="./style.css">
 <style>
@@ -25,7 +25,7 @@ body {
   position: relative;
   width: 100%;
   height: 0;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
   overflow: hidden;
 }
 
@@ -37,6 +37,8 @@ body {
   height: 100%;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
+  background-size: cover;
+  background-position: center center;
 }
 
 .slide.current {
@@ -46,24 +48,31 @@ body {
 
 .slide:first-child {
   background: url("1.png") no-repeat
-    center center/cover;
 }
 
 .slide:nth-child(2) {
   background: url("2.png") no-repeat
-    center center/cover;
 }
 
 .slide:nth-child(3) {
   background: url("3.png") no-repeat
-    center center/cover;
 }
 
 .slide:nth-child(4) {
   background: url("4.png") no-repeat
-    center center/cover;
 }
 
+.slide:nth-child(5) {
+  background: url("5.png") no-repeat
+}
+
+.slide:nth-child(6) {
+  background: url("6.png") no-repeat
+}
+
+.slide:nth-child(7) {
+  background: url("7.png") no-repeat
+}
 
 .buttons button#prev {
   position: absolute;
@@ -116,6 +125,9 @@ body {
   <!-- partial:index.partial.html -->
   <div class="slider">
     <div class="slide current"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
     <div class="slide"></div>
     <div class="slide"></div>
     <div class="slide"></div>
